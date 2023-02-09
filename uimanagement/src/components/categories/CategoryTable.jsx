@@ -8,12 +8,11 @@ const CategoryTable = ({ categoryList }) => {
                 <tr>
                     <th>ID</th>
                     <th>Category name</th>
-                    <th>Active</th>
                     <th>Options</th>
                 </tr>
             </thead>
             <tbody>
-                { categoryList.map(x => <CategoryTableRow key={x.id} id={x.id} categoryName={x.categoryName} isActive={x.isActive}/>) }
+                { categoryList.map(x => <CategoryTableRow key={x.id} id={x.id} categoryName={x.categoryName}/>) }
             </tbody>
         </table>
     )

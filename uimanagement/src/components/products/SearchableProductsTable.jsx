@@ -1,12 +1,12 @@
-import CategoryTable from "./CategoryTable";
+import ProductsTable from "./ProductsTable";
 
 const arr = [   
-    { id: 0, categoryName: 'a'}, 
-    { id: 1, categoryName: 'b'}, 
-    { id: 2, categoryName: 'c'}, 
+    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
+    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
+    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'}, 
 ];
 
-const SearchableCategoryTable = () => {
+const SearchableProductsTable = () => {
     return (  
         <div className="searchableCategoryTable">
             <div className="searchable d-flex justify-content-start">
@@ -15,9 +15,9 @@ const SearchableCategoryTable = () => {
                 <button class="btn btn-outline-secondary rounded" type="button" id="button-addon2">Fetch</button>
             </div>
             </div>
-            <CategoryTable categoryList={arr} />
+            <ProductsTable productsList={arr} />
         </div>
     );
 }
  
-export default SearchableCategoryTable;
+export default SearchableProductsTable;
