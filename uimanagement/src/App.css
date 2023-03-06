@@ -44,18 +44,3 @@
   background-color: #4c83fa;
   cursor: pointer; 
 }
-
-.searchContainer {
-  height: 100vh;
-  border: 1px black solid;
-}
-
-.scrollableCategoryView{
-  height: 100%;
-  overflow: auto;
-}
-
-.scrollableProductsView {
-  height: 100%;
-  overflow: auto;
-}

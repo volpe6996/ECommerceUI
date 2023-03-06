@@ -8,20 +8,6 @@ const arr = [
     { id: 4, categoryName: 'Urządzenia peryferyjne'}, 
     { id: 5, categoryName: 'Smartphony i smartwatche'},
     { id: 6, categoryName: 'Sprzęt audio'},
-    { id: 0, categoryName: 'AGD małe'}, 
-    { id: 1, categoryName: 'AGD duże'}, 
-    { id: 2, categoryName: 'Komputery'},
-    { id: 3, categoryName: 'Laptopy'}, 
-    { id: 4, categoryName: 'Urządzenia peryferyjne'}, 
-    { id: 5, categoryName: 'Smartphony i smartwatche'},
-    { id: 6, categoryName: 'Sprzęt audio'},
-    { id: 0, categoryName: 'AGD małe'}, 
-    { id: 1, categoryName: 'AGD duże'}, 
-    { id: 2, categoryName: 'Komputery'},
-    { id: 3, categoryName: 'Laptopy'}, 
-    { id: 4, categoryName: 'Urządzenia peryferyjne'}, 
-    { id: 5, categoryName: 'Smartphony i smartwatche'},
-    { id: 6, categoryName: 'Sprzęt audio'},
 ];
 
 const SearchableCategoryTable = () => {

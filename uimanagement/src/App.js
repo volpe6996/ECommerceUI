@@ -15,14 +15,6 @@ function App() {
         @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
       </style>
       <Header/>
-      <div className="searchContainer row">
-        <div className="scrollableCategoryView col-4 px-1">
-          <SearchableCategoryTable/>
-        </div>
-        <div className="scrollableProductsView col-8 px-1">
-          <SearchableProductsTable/>
-        </div>
-      </div>
       <Footer/>
     </div>
   );

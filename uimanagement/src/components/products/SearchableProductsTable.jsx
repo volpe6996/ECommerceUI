@@ -3,25 +3,7 @@ import ProductsTable from "./ProductsTable";
 const arr = [   
     { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
     { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'},
-    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
-    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'}, 
-    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
-    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'}, 
-    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
-    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'}, 
-    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
-    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'}, 
-    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
-    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'}, 
-    { id: 0, name: 'Auto', description: 'Szybkie bo czerwone', categoryName: 'a'}, 
-    { id: 1, name: 'Jabłko', description: 'Dobre bo kaszubskie', categoryName: 'b'}, 
-    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'},  
+    { id: 2, name: 'Ołówek', description: 'Za darmo bo z Castoramy', categoryName: 'c'},,  
 ];
 
 const SearchableProductsTable = () => {
