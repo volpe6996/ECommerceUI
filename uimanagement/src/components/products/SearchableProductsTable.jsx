@@ -10,7 +10,7 @@ const SearchableProductsTable = () => {
     return (  
         <div className="searchableCategoryTable">
             <div className="searchable d-flex justify-content-start">
-            <div class="input-group mb-3 w-50 pt-1">
+            <div class="input-group mb-3 w-25 pt-1">
                 <input type="text" class="form-control me-2 rounded" placeholder="Search for Products"/>
                 <button class="btn btn-outline-secondary rounded" type="button" id="button-addon2">Fetch</button>
             </div>

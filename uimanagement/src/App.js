@@ -11,9 +11,6 @@ import Header from './Header';
 function App() {
   return (
     <div className="container-fluid">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700&display=swap');
-      </style>
       <Header/>
       <Footer/>
     </div>

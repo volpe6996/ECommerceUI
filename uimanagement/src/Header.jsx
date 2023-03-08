@@ -1,19 +1,29 @@
-import "bootstrap/dist/js/bootstrap.min.js"
-import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap/dist/js/bootstrap.min.js";
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import "./App.css";
 
-const Header = () => {
+export const Header = () => {
     return (
-        <div className="header row text-center bg-primary position-relative">
-        <div className="col-md-2 fs-3 text-start ps-3">Management Side</div>
-        <div className="nav-opt col-md-1 fs-5">Categories</div>
-        <div className="nav-opt col-md-1 fs-5">Products</div>
-        <div className="nav-opt col-md-1 fs-5">Orders</div>
-        <div className="nav-opt col-md-1 fs-5">Users</div>
-        <div className="nav-opt col-md-1 fs-5  position-absolute end-0">
-          <img class="admin-panel-icon" src="admin-icon.png"/>
-        </div>
+      <div class="navbarContainer">
+        <Navbar bg="primary" variant="dark">
+        <Container className="mx-0 px-3">
+          <Navbar.Brand href={`/`}>Management Side</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href={`/categories`}>Categories</Nav.Link>
+            <Nav.Link href={`/products`}>Products</Nav.Link>
+            <Nav.Link href={`/orders`}>Orders</Nav.Link>
+            <Nav.Link href={`/users`}>Users</Nav.Link>
+            <Nav.Link className="position-absolute end-0" href={`/adminPanel`}>
+              <img src="admin-gray.svg" width="28px" alt="adminPanel">
+              </img>
+            </Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
       </div>
       );
 }
  
-export default Header;
+export default Header ;
