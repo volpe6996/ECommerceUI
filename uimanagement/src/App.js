@@ -5,14 +5,12 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import CategoryTable from './components/categories/CategoryTable';
 import SearchableCategoryTable from './components/categories/SearchableCategoryTable';
 import SearchableProductsTable from './components/products/SearchableProductsTable';
-import Footer from './Footer';
-import Header from './Header';
+import Footer from './layout components/Footer';
+import Header from './layout components/Header';
 
 function App() {
   return (
-    <div className="container-fluid">
-      <Header/>
-      <Footer/>
+    <div className="container">
     </div>
   );
 }
