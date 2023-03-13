@@ -1,14 +1,15 @@
 import ProductsTableRow from "./ProductsTableRow";
+import Table from 'react-bootstrap/Table';
 
 const ProductsTable = ({ productsList }) => {
 
     return (
-        <table className="table">
+        <Table style={{maxWidth: 100 + 'vw'}} striped bordered hover responsive className="m-0">
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
-                    <th>Description</th>
+                    <th className="col-md-7">Description</th>
                     <th>Category name</th>
                     <th>Options</th>
                 </tr>
@@ -16,7 +17,7 @@ const ProductsTable = ({ productsList }) => {
             <tbody>
                 { productsList.map(x => <ProductsTableRow key={x.id} id={x.id} categoryName={x.categoryName} name={x.name} description={x.description}/>) }
             </tbody>
-        </table>
+        </Table>
     )
 
 }

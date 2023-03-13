@@ -1,9 +1,12 @@
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
 const CategoryTableRowOptions = () => {
     return (  
-        <form>
-            <button className="btn btn-primary me-2">EDIT</button>
-            <button className="btn btn-success">SHOW PRODUCTS</button>
-        </form>
+        <Form>
+            <Button variant="primary" className="me-2">EDIT</Button>
+            <Button variant="success">SHOW PRODUCTS</Button>
+        </Form>            
     );
 }
  
