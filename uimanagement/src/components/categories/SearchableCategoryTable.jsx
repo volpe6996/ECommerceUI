@@ -39,7 +39,7 @@ const arr = [
 ];
 
 const SearchableCategoryTable = () => {
-    return (  
+    return ( 
         <div className="searchableCategoryTable">
             <div className="searchBar sticky-top p-2">
                 <div class="input-group w-25">

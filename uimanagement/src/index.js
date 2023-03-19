@@ -2,12 +2,7 @@ import React from 'react';
 import './index.css';
 import App from './App';
 import ReactDOM from "react-dom/client";
-import {
-  Route,
-  createRoutesFromElements,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { Route, createRoutesFromElements, createBrowserRouter, RouterProvider, } from "react-router-dom";
 import Header from './layout components/Header';
 import SearchableCategoryTable from './components/categories/SearchableCategoryTable';
 import SearchableProductsTable from './components/products/SearchableProductsTable';
