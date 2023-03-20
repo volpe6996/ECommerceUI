@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600;800&family=Poppins:wght@100;300;400;500;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Poppins:wght@100;300;400;500;600;700&display=swap');
   /* font-family: 'Outfit', sans-serif; */
 
 .appContainer{
@@ -6,13 +6,17 @@
 }
 
 .headerContainer{
-  padding: 0 200px;
+  padding: 0 128px;
   background: #00643C;
   font-size: 12px;
 }
 
+.innerHeaderContainer p{
+  font-weight: 500;
+}
+
 .navbarContainer{
-  padding: 0 200px;
+  padding: 0 128px;
 }
 
 .navbarContainer p{
@@ -25,7 +29,7 @@
 }
 
 .carouselContainer{
-  padding: 0 200px;
+  padding: 0 128px;
 }
 
 .carouselContainer img{

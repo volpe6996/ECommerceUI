@@ -9,6 +9,8 @@ import Saved from './assets/Saved.svg';
 import Search from './assets/Search.svg';
 import Cr1 from './assets/carousel1.svg';
 import Cr2 from './assets/carousel2.svg';
+import Language from './assets/Language.svg';
+import Location from './assets/Location.svg';
 
 function App() {
   return (
@@ -17,28 +19,30 @@ function App() {
       <div className="container-fluid headerContainer d-flex text-light">
         <div className="col-6 innerHeaderContainer p-0">
           <div className="container-fluid d-flex justify-content-start m-auto p-0">
-            <p className="m-0 py-2 pe-3">Find a store</p>
+            <p className="m-0 py-2 pe-4">Find a store</p>
             <p className="m-0 py-2">Contact</p>
           </div>
         </div>
         <div className="col-6 innerHeaderContainer p-0">
           <div className="container-fluid d-flex justify-content-end m-auto p-0">
-            <p className="m-0 py-2">English</p>
-            <p className="m-0 py-2 ps-3">United States</p>
+            <img src={Language} alt="change-language"/>
+            <p className="m-0 py-2 ps-1 pe-4">English</p>
+            <img src={Location} alt="change-location"/>
+            <p className="m-0 py-2 ps-1">United States</p>
           </div>
         </div>
       </div>
 
       {/* FUTURE NAVBAR COMPONENT */}
-      <div className="container-fluid navbarContainer py-3 d-flex text-dark">
+      <div className="container-fluid navbarContainer py-4 d-flex text-dark">
         <div className="col-8 innerNavbarContainer p-0">
           <div className="container-fluid d-flex align-items-center justify-content-start p-0">
-              <div className="item pe-5">
-                <img src={navbarLogo} alt="navbar-logo" width="64"/>
+              <div className="item pe-4">
+                <img src={navbarLogo} alt="navbar-logo" width="48"/>
               </div>
-              <p className="m-0 pe-5 fs-4">Menu</p>
-              <p className="m-0 pe-5 fs-4">Rewards</p>
-              <p className="m-0 fs-4">Gift Cards</p>
+              <p className="m-0 pe-4 fs-5">Menu</p>
+              <p className="m-0 pe-4 fs-5">Rewards</p>
+              <p className="m-0 fs-5">Gift Cards</p>
           </div>
         </div>
         <div className="col-4 innerNavbarContainer p-0 d-flex">
