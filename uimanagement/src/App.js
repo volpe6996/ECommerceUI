@@ -9,6 +9,8 @@ import Footer from './layout components/Footer';
 import ErrorPage from './ErrorPage';
 import RootLayout from './routes/RootLayout';
 import LogIn from './components/LogIn';
+import SearchableOrdersTable from './components/orders/SearchableOrdersTable';
+import SearchableUsersTable from './components/users/SearchableUsersTable';
 
 function App() {
   const router = createBrowserRouter(
@@ -17,8 +19,8 @@ function App() {
         <Route index element={<h1>NOT YET IMPLEMENTED</h1>}/>
         <Route path='/categories' element={<SearchableCategoryTable/>}/>
         <Route path='/products' element={<SearchableProductsTable/>}/>
-        <Route path='/orders' element={<h1>NOT YET IMPLEMENTED</h1>}/>
-        <Route path='/users' element={<h1>NOT YET IMPLEMENTED</h1>}/>
+        <Route path='/orders' element={<SearchableOrdersTable/>}/>
+        <Route path='/users' element={<SearchableUsersTable/>}/>
         <Route path='/adminPanel' element={<LogIn/>}/>
       </Route>
     )

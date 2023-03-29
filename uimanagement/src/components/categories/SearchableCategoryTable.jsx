@@ -42,7 +42,7 @@ const SearchableCategoryTable = () => {
     return ( 
         <div className="searchableCategoryTable">
             <div className="searchBar sticky-top p-2">
-                <div class="input-group w-25">
+                <div class="input-group w-50">
                     <Form.Control type="text" className="form-control me-2 rounded" placeholder="Search for Categories"/>
                     <Button variant="outline-secondary" className="rounded me-2" type="button">Fetch</Button>
                     <Button variant="outline-success" className="rounded" type="button">Add new Category</Button>

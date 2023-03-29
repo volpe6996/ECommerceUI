@@ -8,8 +8,8 @@ const CategoryTable = ({ categoryList }) => {
             <thead>
                 <tr>
                     <th className="col-md-1">ID</th>
-                    <th className="col-md-9">Category name</th>
-                    <th>Options</th>
+                    <th className="col-md-8">Category name</th>
+                    <th className="col-md-3">Options</th>
                 </tr>
             </thead>
             <tbody>
