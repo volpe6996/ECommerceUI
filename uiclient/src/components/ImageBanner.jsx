@@ -4,7 +4,7 @@ import Image2 from '../assets/Image2.jpg';
 
 const ImageBanner = () => {
     return (
-        <div className="row imageBannerContainer d-flex m-0">
+        <div className="row imageBannerContainer d-flex m-0 pt-4">
             <div className="container-fluid d-flex col-sm-6 p-sm-0 pe-sm-2 px-0 pb-3">
                 <img className="image1" src={Image1} alt="image-1" />
             </div>

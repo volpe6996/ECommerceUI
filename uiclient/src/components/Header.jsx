@@ -7,7 +7,6 @@ const Header = () => {
         <div className="row headerContainer text-light m-0">
         <div className="col-6 innerHeaderContainer p-0">
           <div className="container-fluid d-flex justify-content-start m-auto p-0">
-            <p className="m-0 py-2 pe-4">Find a store</p>
             <p className="m-0 py-2">Contact</p>
           </div>
         </div>

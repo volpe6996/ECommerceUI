@@ -18,7 +18,6 @@
 .navbarHamburgerContainer{
   display: none;
   z-index: 10;
-  position: relative;
   margin: 0;
 }
 
@@ -26,22 +25,105 @@
   z-index: 10;
 }
 
-.navbarNavigationContainer p, .navbarNavigationContainer img{
-  padding-right: 32px;
+.navbarNavigationContainer a{
+  font-weight: 500;
+  color: #0D0D0D;
+  margin-right: 32px;
+  text-decoration: none;
+  padding-bottom: 24px;
 }
+
+.navbarNavigationContainer img{
+  padding-right: 64px;
+}
+
+/* NAVBAR UNDERLINE STYLES START */
+
+.underlineContainer {
+	text-align: center;
+  padding-bottom: 22px;
+	border-bottom: 2px solid rgba(13, 13, 13, 0.08);
+}
+
+.underlineContainer ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.underlineContainer ul li{
+	color: #0D0D0D;
+	text-decoration: none;
+	display: inline-block;
+  position: relative;
+  bottom: -2px;
+}
+
+/* .underlineContainer ul li.active-link{
+	border-bottom: 2px solid #0D0D0D;
+} */
+
+.underlineContainer ul li a.active-link{
+  border-bottom: 2px solid #0D0D0D;
+} 
+
+.underlineContainer ul li a:hover{
+  border-bottom: 2px solid #0D0D0D;
+} 
+
+/* NAVBAR UNDERLINE STYLES END */
 
 .footerContainer{
   background: #000000;
 }
 
-.footerPayments p{
+.footerContainer p{
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
   font-weight: 500;
+  color: white;
 }
 
-.paymentsIconContainer div{
-  width: 22%;
-  background-color: #eaeaea;
-  border-radius: 5px;
+.footerSocialMediaIcons img{
+  padding: 0 52px 0 0;
+}
+
+.footerColumn{
+  padding: 0;
+}
+
+.footerColumn ul{
+  padding: 0;
+  margin: 0;
+  align-items: start;
+}
+
+.footerColumn li{
+  padding: 12px 0 0 0;
+  color: #F2F2F266;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+}
+
+.footerEndContainer{
+  padding: 32px 0;
+}
+
+.footerEndContainer ul{
+  list-style: none;
+  font-size: 12px;
+  font-size: 500;
+  color: #F2F2F266;
+}
+
+li[class="endFooterLinks"]:after{
+  padding: 0 12px;
+  color: #F2F2F266;
+  content: "|";
 }
 
 /* MAIN PADDING */
@@ -53,13 +135,13 @@
   border-radius: 15px;
 }
 
-@media (max-width: 1110px) {
+@media (max-width: 1360px) {
   .navbarContainer, .headerContainer, .imageBannerContainer, .footerContainer{
-    padding: 0 100px;
+    padding: 0 80px;
   }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 1190px) { 
   .headerContainer{
     display: none;
   }
@@ -70,7 +152,11 @@
 
   .navbarHamburgerContainer{
     display: flex;
-    padding: 20px 100px;
+    padding: 20px 80px;
+  }
+
+  .footerSocialMediaIcons img{
+    padding: 0 30px 0 0;
   }
 }
 
@@ -81,6 +167,33 @@
 
   .navbarHamburgerContainer{
     padding: 24px 32px;
+  }
+
+  .footerSocialMediaIcons img{
+    padding: 0 10px;
+  }
+}
+
+/* footer stylies only */
+@media (max-width: 768px){
+  .footerSocialMediaIcons{
+    padding: 0 20px;
+  }
+
+  .footerSocialMediaIcons img{
+    padding: 0;
+  }
+
+  .footerMiddleContainer{
+    flex-direction: column;
+  }
+
+  .footerMiddleContainer li, .footerMiddleContainer p{
+    width: 250px;
+  }
+
+  li[class="endFooterLinks"]:after{
+    content: none;
   }
 }
 
@@ -133,12 +246,17 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  overflow: hidden;
   top: 0;
   left: 0;
   transform: translateX(-100vw);
   transition: transform 0.3s 0.1s ease-in-out;
   background: white;
   font-weight: 600;
+}
+
+.menu:active{
+  overflow: hidden;
 }
 
 .menu p, .menu img{

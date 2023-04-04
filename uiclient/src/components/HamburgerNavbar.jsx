@@ -43,9 +43,10 @@ const HamburgerNavbar = () => {
                     </div>
                     <div className={menu_class}>
                         <div className="d-flex flex-column align-items-center fs-5 h-100">
-                            <p className="m-0 pb-3">Processors</p>
-                            <p className="m-0 pb-3">Graphics</p>
-                            <p className="m-0">Software</p>
+                        <p className="m-0 pb-3">Products</p>
+                        <p className="m-0 pb-3">Solutions</p>
+                        <p className="m-0 pb-3">Download & Support</p>
+                        <p className="m-0">Shop</p>
                         </div>
                         <div className="d-flex innerNavbarContainer">
                             <img className="pe-4" src={Search} alt="search-icon" />
