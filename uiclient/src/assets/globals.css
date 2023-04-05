@@ -30,18 +30,34 @@
   color: #0D0D0D;
   margin-right: 32px;
   text-decoration: none;
-  padding-bottom: 24px;
+  padding-bottom: 27px;
+  font-size: 18px;
+}
+
+.navbarContainer p{
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .navbarNavigationContainer img{
+  cursor: pointer;
   padding-right: 64px;
+}
+
+.navbarNavigationContainer img, .navbarIconsContainer{
+  margin-bottom: 25px;
+}
+
+/* navbar icons */
+.spacedIcon{
+  padding-right: 32px;
 }
 
 /* NAVBAR UNDERLINE STYLES START */
 
 .underlineContainer {
 	text-align: center;
-  padding-bottom: 22px;
+  margin: 0 0 30px 0;
 	border-bottom: 2px solid rgba(13, 13, 13, 0.08);
 }
 
@@ -61,19 +77,46 @@
   bottom: -2px;
 }
 
-/* .underlineContainer ul li.active-link{
-	border-bottom: 2px solid #0D0D0D;
-} */
-
 .underlineContainer ul li a.active-link{
+  padding-bottom: 25px;
   border-bottom: 2px solid #0D0D0D;
 } 
 
 .underlineContainer ul li a:hover{
+  padding-bottom: 25px;
   border-bottom: 2px solid #0D0D0D;
 } 
 
 /* NAVBAR UNDERLINE STYLES END */
+
+.innerCarouselContainer{
+  border-radius: 24px;
+}
+
+.fpOfferImage{
+  border-radius: 15px;
+  background-color: #0d0d0d1b;
+  padding: 40px 0;
+}
+
+.fpOfferDescription h3{
+  font-size: 20px;
+}
+
+.fpOfferDescription h3[class="price"], .fpOfferDescription h3[class="priceMiddle"]{
+  font-weight: 800;
+  font-family: 'Outfit';
+}
+
+.fpOfferDescription h3[class="priceMiddle"]::after{
+  content: " $299";
+  color: #0D0D0D29;
+  text-decoration: line-through;
+}
+
+.fpOfferDescription h4{
+  font-size: 16px;
+}
 
 .footerContainer{
   background: #000000;
@@ -127,16 +170,12 @@ li[class="endFooterLinks"]:after{
 }
 
 /* MAIN PADDING */
-.navbarContainer, .headerContainer, .imageBannerContainer, .footerContainer{
+.navbarContainer, .headerContainer, .imageCarouselContainer, .fpContainer, .footerContainer{
   padding: 0 164px;
 }
 
-.imageBannerContainer img{
-  border-radius: 15px;
-}
-
 @media (max-width: 1360px) {
-  .navbarContainer, .headerContainer, .imageBannerContainer, .footerContainer{
+  .navbarContainer, .headerContainer, .imageCarouselContainer, .fpContainer, .footerContainer{
     padding: 0 80px;
   }
 }
@@ -161,7 +200,7 @@ li[class="endFooterLinks"]:after{
 }
 
 @media (max-width: 576px) {
-  .headerContainer, .imageBannerContainer, .footerContainer{
+  .headerContainer, .imageCarouselContainer, .footerContainer{
     padding: 0 32px;
   }
 
@@ -195,21 +234,6 @@ li[class="endFooterLinks"]:after{
   li[class="endFooterLinks"]:after{
     content: none;
   }
-}
-
-.navbarContainer p{
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.navbarContainer img{
-  cursor: pointer;
-}
-
-.imageBannerContainer img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
 }
 
 /* -----HAMBURGER-----*/
@@ -298,3 +322,75 @@ li[class="endFooterLinks"]:after{
   transition: ease-in-out 0.2s;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+}
+@media (max-width: 425px) {
+  html {
+    font-size: 8px;
+ }
+}
+
+/* carousel */
+
+.slider{
+  position: relative;
+  height: 85%;
+  transition: all 0.5s ease-in-out;
+
+}
+
+.slideImage{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+  background-Size: cover;
+  background-position: center;
+}
+
+.sliderContainer{
+  padding: 0;
+}
+
+.slideInfo{
+  background-color: #000000;
+  padding: 40px;
+  border-radius: 0 20px 20px 0;
+}
+
+.slideInfo p{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.slideInfo button{
+  border-radius: 10px;
+  border: 0;
+  height: 56px;
+}
+
+.slideInfo button p{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dotsContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.sliderDot{
+  background-color: #0D0D0D14;
+  border: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 12px 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.sliderDot.active{
+  background-color: #000000;
+}

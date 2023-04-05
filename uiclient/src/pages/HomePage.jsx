@@ -1,8 +1,9 @@
 import HamburgerNavbar from "../components/HamburgerNavbar";
 import Header from "../components/Header";
-import ImageBanner from "../components/ImageBanner";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import ImageCarousel from "../components/ImageCarousel";
+import FeaturedProducts from "../components/FeaturedProducts";
 
 const HomePage = () => {
     return (
@@ -10,7 +11,8 @@ const HomePage = () => {
             <Header/>
             <Navbar/>
             <HamburgerNavbar/>
-            <ImageBanner/>
+            <ImageCarousel/>
+            <FeaturedProducts/>
             <Footer/>
         </>
     );
