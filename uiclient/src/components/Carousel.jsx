@@ -11,7 +11,7 @@ const slides = [{ src: img1, title: "Now you don’t have to choose between priv
 
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const delay = 3500;
+    const delay = 8000;
 
     const timeoutRef = React.useRef(null);
 
@@ -49,7 +49,7 @@ const Carousel = () => {
                         <p className="text-white p-0 m-0">{slides[currentIndex].description}</p>
                     </div>
                     <div className="">
-                        <button className="row col-4 align-self-end flex-column justify-content-center p-2">
+                        <button className="row col-xl-4 col-lg-6 col-md-8 col-12 align-self-end flex-column justify-content-center p-2 m-0">
                             <p className="col-9 m-0">{slides[currentIndex].button}</p>
                             <p className="col-3 m-0 d-flex justify-content-center" style={{ fontSize: "30px" }}>{">"}</p>
                         </button>

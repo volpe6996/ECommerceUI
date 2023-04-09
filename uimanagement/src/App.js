@@ -6,7 +6,7 @@ import Header from './layout components/Header';
 import SearchableCategoryTable from './components/categories/SearchableCategoryTable';
 import SearchableProductsTable from './components/products/SearchableProductsTable';
 import Footer from './layout components/Footer';
-import ErrorPage from './ErrorPage';
+import ErrorPage from './components/ErrorPage';
 import RootLayout from './routes/RootLayout';
 import LogIn from './components/LogIn';
 import SearchableOrdersTable from './components/orders/SearchableOrdersTable';

@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { ReactDOM } from 'react';
+import { Link } from 'react-router-dom';
 import '../assets/globals.css';
 import Cart from '../assets/Cart.svg';
 import Notifications from '../assets/Notifications.svg';
@@ -26,19 +27,33 @@ const Navbar = () => {
       <div className="d-flex underlineContainer px-0">
         <div className="col-9 innerNavbarContainer p-0">
           <div className="container-fluid navbarNavigationContainer d-flex justify-content-start p-0">
-            <img className="align-self-center" src={navbarLogo} alt="navbar-logo" height="24" />
+            <a className='p-0 m-0' href={`/`} style={{position: "relative", bottom: "-4px"}}>
+              <img className="align-self-center" src={navbarLogo}  alt="navbar-logo" height="24" />
+            </a>
             <ul>
               <li>
-               <a class="nav-link" href="#">Products</a>
+                <Link className='nav-link' to={`categories`}>
+                  Products
+                </Link>
+                {/* <a class="nav-link" href={`categories`}>Products</a> */}
 			        </li>
               <li>
-               <a class="nav-link" href="#">Solutions</a>
+                <Link className='nav-link' to={`solutions`}>
+                  Solutions
+                </Link>
+                {/* <a class="nav-link" href="#">Solutions</a> */}
 			        </li>		
               <li>
-               <a class="nav-link" href="#">Download & Support</a>
+                <Link className='nav-link' to={`download&support`}>
+                  Download & Support
+                </Link>
+               {/* <a class="nav-link" href="#">Download & Support</a> */}
 			        </li>		
               <li>
-               <a class="nav-link" href="#">Shop</a>
+                <Link className='nav-link' to={`products`}>
+                  Shop
+                </Link>
+               {/* <a class="nav-link" href="#">Shop</a> */}
 			        </li>		
 	          </ul>
           </div>
@@ -49,7 +64,9 @@ const Navbar = () => {
             <img className="spacedIcon" src={Cart} alt="cart-icon" />
             <img className="spacedIcon" src={Saved} alt="saved-icon" />
             <img className="spacedIcon" src={Notifications} alt="notification-icon" />
-            <img src={Profile} alt="profile-icon" />
+            <Link to={`/login`}>
+              <img src={Profile} alt="profile-icon" />
+            </Link>
           </div>
         </div>
       </div>
