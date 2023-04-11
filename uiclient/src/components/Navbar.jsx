@@ -35,25 +35,21 @@ const Navbar = () => {
                 <Link className='nav-link' to={`categories`}>
                   Products
                 </Link>
-                {/* <a class="nav-link" href={`categories`}>Products</a> */}
 			        </li>
               <li>
                 <Link className='nav-link' to={`solutions`}>
                   Solutions
                 </Link>
-                {/* <a class="nav-link" href="#">Solutions</a> */}
 			        </li>		
               <li>
                 <Link className='nav-link' to={`download&support`}>
                   Download & Support
                 </Link>
-               {/* <a class="nav-link" href="#">Download & Support</a> */}
 			        </li>		
               <li>
                 <Link className='nav-link' to={`products`}>
                   Shop
                 </Link>
-               {/* <a class="nav-link" href="#">Shop</a> */}
 			        </li>		
 	          </ul>
           </div>

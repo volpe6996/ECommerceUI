@@ -42,7 +42,7 @@ const HamburgerNavbar = () => {
                         <div className={burger_class} />
                     </div>
                     <div className={menu_class}>
-                        <div className="d-flex flex-column align-items-center fs-5 h-100">
+                        <div className="d-flex flex-column align-items-center fs-1 h-100">
                         <p className="m-0 pb-3">Products</p>
                         <p className="m-0 pb-3">Solutions</p>
                         <p className="m-0 pb-3">Download & Support</p>

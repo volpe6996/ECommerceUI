@@ -13,7 +13,7 @@ const CategoryTable = ({ categoryList }) => {
                 </tr>
             </thead>
             <tbody>
-                { categoryList.map(x => <CategoryTableRow key={x.id} id={x.id} categoryName={x.categoryName}/>) }
+                { categoryList.map(x => <CategoryTableRow key={x.id} id={x.id} categoryName={x.name}/>) }
             </tbody>
         </Table>
     )

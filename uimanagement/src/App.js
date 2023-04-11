@@ -2,26 +2,44 @@ import './App.css';
 import "bootstrap/dist/js/bootstrap.min.js"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { Route, createRoutesFromElements, createBrowserRouter, RouterProvider, } from "react-router-dom";
-import Header from './layout components/Header';
 import SearchableCategoryTable from './components/categories/SearchableCategoryTable';
 import SearchableProductsTable from './components/products/SearchableProductsTable';
 import Footer from './layout components/Footer';
 import ErrorPage from './components/ErrorPage';
-import RootLayout from './routes/RootLayout';
+import RootLayout from './pages/RootLayout';
 import LogIn from './components/LogIn';
+import StartPage from './pages/StartPage'
 import SearchableOrdersTable from './components/orders/SearchableOrdersTable';
 import SearchableUsersTable from './components/users/SearchableUsersTable';
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<RootLayout/>} errorElement={<ErrorPage/>}>
-        <Route index element={<h1>NOT YET IMPLEMENTED</h1>}/>
-        <Route path='/categories' element={<SearchableCategoryTable/>}/>
-        <Route path='/products' element={<SearchableProductsTable/>}/>
-        <Route path='/orders' element={<SearchableOrdersTable/>}/>
-        <Route path='/users' element={<SearchableUsersTable/>}/>
-        <Route path='/adminPanel' element={<LogIn/>}/>
+      <Route path='' errorElement={<ErrorPage/>}>
+        <Route path='' element={<RootLayout/>}>
+          <Route index element={<LogIn/>}/>
+        </Route>
+
+        <Route path='/start' element={<RootLayout/>}>
+          <Route index element={<StartPage/>}/>
+        </Route>
+
+        <Route path='/categories' element={<RootLayout/>}>
+          <Route index element={<SearchableCategoryTable/>}/>
+        </Route>
+
+        <Route path='/products' element={<RootLayout/>}>
+          <Route index element={<SearchableProductsTable/>}/>
+        </Route>
+
+        <Route path='/orders' element={<RootLayout/>}>
+          <Route index element={<SearchableOrdersTable/>}/>
+        </Route>
+
+        <Route path='/users' element={<RootLayout/>}>
+          <Route index element={<SearchableUsersTable/>}/>
+        </Route>
+
       </Route>
     )
   );

@@ -8,6 +8,10 @@ const LogIn = () => {
     const [error, setError] = useState(null);
     const [formData, setFormData] = useState({ email: '', password: '', });
 
+    const LogOut = () =>{
+        sessionStorage.clear();
+    }
+
     const handleInputChange = (event) => {
         const { name, value } = event.target;
         setFormData((prevFormData) => ({ ...prevFormData, [name]: value }));
@@ -18,7 +22,7 @@ const LogIn = () => {
         UseLogin(formData)
           .then((result) => {
             if (result)
-              nav('/');
+              nav('/start');
           })
           .catch(() => {
             setError("Nieprawidłowe dane lub brak permisji.");
@@ -26,13 +30,13 @@ const LogIn = () => {
       };
 
     return (
-        <div className="logInContainer">
+        <div className="logInContainer" onLoad={() => LogOut()}>
             <div class="container">
                 <div class="row justify-content-center my-5">
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="card shadow">
                             <div class="card-title text-center border-bottom">
-                                <h2 class="p-3">Login</h2>
+                                <h2 class="p-3">Log in</h2>
                             </div>
                             <div class="card-body">
                                 <Form onSubmit={handleLogin}>
