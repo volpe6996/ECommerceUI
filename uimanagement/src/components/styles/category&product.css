@@ -1,0 +1,12 @@
+.searchableCategoryTable, .searchableProductsTable{
+    height: 95vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.searchBar{
+    overflow-x: hidden;
+    width: 100vw;
+    height: auto;
+    background-color: #fff;
+}

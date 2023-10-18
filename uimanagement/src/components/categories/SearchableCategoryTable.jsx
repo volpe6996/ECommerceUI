@@ -1,21 +1,37 @@
 import CategoryTable from "./CategoryTable";
-
-const arr = [   
-    { id: 0, categoryName: 'a'}, 
-    { id: 1, categoryName: 'b'}, 
-    { id: 2, categoryName: 'c'}, 
-];
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import '../styles/category&product.css';
+import UseGetCategories from "../../hooks/CategoriesHooks";
+import { useEffect, useState } from "react";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const SearchableCategoryTable = () => {
-    return (  
+    const nav = useNavigate();
+    const[data, setData] = useState([]);
+
+    const handleGetCategoires = () => {
+        UseGetCategories().then((res) => {
+            if(sessionStorage.length <= 0)
+                nav('');
+            setData(res);
+        }).catch(nav(''));
+    };
+
+    useEffect(() => {
+        handleGetCategoires();
+    }, []);
+
+    return (
         <div className="searchableCategoryTable">
-            <div className="searchable d-flex justify-content-start">
-            <div class="input-group mb-3 w-25 p-1">
-                <input type="text" class="form-control me-2 rounded" placeholder="Search"/>
-                <button class="btn btn-outline-secondary rounded" type="button" id="button-addon2">Fetch</button>
+            <div className="searchBar sticky-top p-2">
+                <div class="input-group w-50">
+                    <Form.Control type="text" className="form-control me-2 rounded" placeholder="Search for Categories"/>
+                    <Button variant="outline-secondary" className="rounded me-2" type="button">Fetch</Button>
+                    <Button variant="outline-success" className="rounded" type="button">Add new Category</Button>
+                </div>
             </div>
-            </div>
-            <CategoryTable categoryList={arr} />
+            <CategoryTable categoryList={data} />
         </div>
     );
 }

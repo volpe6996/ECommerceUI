@@ -1,8 +1,11 @@
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+
 const ProductsTableRowOptions = () => {
     return (  
-        <form>
-            <button className="btn btn-primary me-2">EDIT</button>
-        </form>
+        <Form>
+            <Button variant="primary">EDIT</Button>
+        </Form>  
     );
 }
  
